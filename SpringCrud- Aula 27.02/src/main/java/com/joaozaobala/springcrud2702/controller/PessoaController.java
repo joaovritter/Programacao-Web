@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController  //identificando classe como controller
-@RequestMapping("/pessoa") //identifica que ao entrar no /pessoa ira passar por aqui (é um endpoint)
+//ou seja, vai responder a requisições HTTP
+@RequestMapping("/pessoa") //Url base para os endpoints desta classe
 public class PessoaController {
     private final PessoaRepository pessoaRepository; //final: apos atribuir valores ao objeto, nao é mais modificado
 
@@ -19,7 +20,7 @@ public class PessoaController {
     }
 
     //select * from Pessoa
-    @GetMapping
+    @GetMapping //getMapping mapeia requisicoes HTTP do tipo GET
     public List<Pessoa> listarPessoas() {
         return pessoaRepository.findAll();
     }
@@ -33,11 +34,11 @@ public class PessoaController {
     }
 
     //select * from pessoa where cpf
-    @GetMapping("/cpf/{cpf}")
+    @GetMapping("/cpf/{cpf}")//responseEntity é uma classe para representar toda a resposta http
     public ResponseEntity<Pessoa> buscarPorCpf(@PathVariable String cpf) {
         return pessoaRepository.findByCpf(cpf)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+                .map(ResponseEntity::ok) //se encontrar, retorna 200 OK com os dados
+                .orElse(ResponseEntity.notFound().build()); //se nao encontrar, retorna 404 Not Found
     }
     //insert
     @PostMapping //metodo post( inserir pessoa no banco de dados)
