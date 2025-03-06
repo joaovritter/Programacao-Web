@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController  //identificando classe como controller
-@RequestMapping("/pessoa") //indentifica que ao entrar no /pessoa ira passar por aqui (é um endpoint)
+@RequestMapping("/pessoa") //identifica que ao entrar no /pessoa ira passar por aqui (é um endpoint)
 public class PessoaController {
     private final PessoaRepository pessoaRepository; //final: apos atribuir valores ao objeto, nao é mais modificado
 
