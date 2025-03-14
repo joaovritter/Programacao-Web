@@ -36,5 +36,9 @@ public class Funcionario {
     @OneToMany (mappedBy = "cpfFuncionario") //mapeia da tabela FuncionarioProjeto
     private List<TrabalhaEm> listaProjetosF;
 
+    //Relacao GERENCIA
+    @OneToOne (mappedBy = "gerente")
+    private Departamento gerente_departamento;
+
 
 }

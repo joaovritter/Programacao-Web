@@ -2,6 +2,7 @@ package com.joaozaobala.empresajpa;
 
 import jakarta.persistence.*;
 
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -19,8 +20,10 @@ public class Departamento {
     private List<Localizacoes> localizacoes;
 
     //Relacao GERENCIA
-    @OneToOne (mappedBy = "supervisor")
+    @OneToOne
+    @JoinColumn (name = "cpf_gerente")
     private Funcionario gerente;
+    private Date data_inicio_gerente;
 
 
 
