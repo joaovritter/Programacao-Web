@@ -25,6 +25,10 @@ public class Departamento {
     private Funcionario gerente;
     private Date data_inicio_gerente;
 
+    //Relacao CONTROLA: um departamento tem muitos projetos
+    @OneToMany (mappedBy = "departamentoP")
+    private List<Projeto> listaProjetos;
+
 
 
 }

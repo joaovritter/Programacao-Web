@@ -27,7 +27,7 @@ public class Funcionario {
     @OneToMany (mappedBy = "parentesco")
     private List<Dependente> dependentes;
 
-    //Relacao TRABALHA_PARA:
+    //Relacao TRABALHA_PARA: muitos trabalham para um departamento
     @ManyToOne //muitos funcionarios se relacionam em um departamento
     @JoinColumn(name = "Dnr")
     private Departamento dpe;

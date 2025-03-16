@@ -12,7 +12,13 @@ public class Projeto {
     private int projNumero;
     private String projNome;
     private String projLocal;
-
-    @OneToMany (mappedBy = "numeroProjeto") //mapeia da clasee FuncionarioProjeto
+    //Relacao TRABALHA_EM
+    @OneToMany(mappedBy = "numeroProjeto") //mapeia da clasee FuncionarioProjeto
     private List<TrabalhaEm> listaFuncionariosP;
+
+    //Relacao CONTROLA
+    @ManyToOne
+    @JoinColumn (name = "dnumero")
+    private Departamento departamentoP;
+
 }
