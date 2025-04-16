@@ -8,11 +8,11 @@
         <version>3.4.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.joazao</groupId>
-    <artifactId>PhoneAula2003</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>phonedto</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Phone - Aula 20.03</name>
-    <description>Phone - Aula 20.03</description>
+    <name>Projeto2003</name>
+    <description>Projeto2003</description>
     <url/>
     <licenses>
         <license/>
