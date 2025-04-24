@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c24275c-2877-4df0-8a36-b1a21b00c415" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/PhoneRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/PhoneResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/UserRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/UserResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/UserUpdateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/src/main/java/com/joaozaobala/empresajpa/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/src/main/java/com/joaozaobala/empresajpa/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/src/main/java/com/joaozaobala/empresajpa/Projeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/src/main/java/com/joaozaobala/empresajpa/Projeto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phone - Aula 20.03/src/main/java/com/joazao/phoneaula2003/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Phone - Aula 20.03/src/main/java/com/joazao/phoneaula2003/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Phone - Aula 20.03/src/main/java/com/joazao/phoneaula2003/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Phone - Aula 20.03/src/main/java/com/joazao/phoneaula2003/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/Dto/PhoneRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/Dto/PhoneResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/Dto/ResponseUserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/Dto/UserRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/Dto/UserResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/Projeto2003Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/controller/PhoneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/model/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/repository/PhoneRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/repository/RepositoryUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/service/PhoneService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/phonedto/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/phonedto/Projeto2003ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/Dto/CreateUserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/Dto/ResponseUserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/Phone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/Projeto2003Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/repository/PhoneRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/repository/RepositoryUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/projeto2003/Projeto2003ApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;joaovritter&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/joaovritter/Programacao-Web.git&quot;,
+    &quot;accountId&quot;: &quot;a88488f0-71d0-46f6-87b1-8927d77b7f04&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2vp587NxbBA2t207RbzwhKXlf65" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jvgam/OneDrive/Área de Trabalho/JV/ATIVIDADES FACUL/5º SEMESTRE/Programação Web/PhoneDto - Aula 03.04/src/main/java/com/joaozao/phonedto/dtoOld&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jvgam\OneDrive\Área de Trabalho\JV\ATIVIDADES FACUL\5º SEMESTRE\Programação Web\PhoneDto - Aula 03.04\src\main\java\com\joaozao\phonedto\dtoOld" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Projeto2003Application">
+    <configuration name="Projeto2003Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="phonedto" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.phonedto.Projeto2003Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserPhoneApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="phonedto" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.herysson.phonedto.UserPhoneApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c24275c-2877-4df0-8a36-b1a21b00c415" name="Changes" comment="" />
+      <created>1744829012907</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744829012907</updated>
+      <workItem from="1744829014140" duration="40000" />
+      <workItem from="1744829658385" duration="768000" />
+      <workItem from="1744839674686" duration="6000" />
+      <workItem from="1745496335823" duration="5542000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
