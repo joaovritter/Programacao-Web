@@ -5,63 +5,25 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-
+@Data
+@NoArgsConstructor
 public class Phone {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String number;
+    @NonNull
+    @Column(nullable = false)
+    private String numero;
 
-    @JsonBackReference
+    @NonNull
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id")
+    @JsonBackReference
     private User user;
 
-    public Phone() {
-    }
-
-    public Phone(Long id, String number, User user) {
-        this.id = id;
-        this.number = number;
+    public Phone(@NonNull User user, @NonNull String numero) {
         this.user = user;
-    }
-
-    public Phone(String number, User user) {
-        this.number = number;
-        this.user = user;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    @Override
-    public String toString() {
-        return "Phone{" +
-                "id=" + id +
-                ", number='" + number + '\'' +
-                ", user=" + user +
-                '}';
+        this.numero = numero;
     }
 }

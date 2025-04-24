@@ -1,10 +1,10 @@
-package com.herysson.userphoneapi;
+package com.example.projeto2003;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserPhoneApiApplicationTests {
+class Projeto2003ApplicationTests {
 
     @Test
     void contextLoads() {

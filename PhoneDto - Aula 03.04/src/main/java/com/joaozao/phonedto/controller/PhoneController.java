@@ -2,84 +2,48 @@ package com.joaozao.phonedto.controller;
 
 import com.joaozao.phonedto.dto.PhoneRequestDTO;
 import com.joaozao.phonedto.dto.PhoneResponseDTO;
-import com.joaozao.phonedto.mapper.PhoneMapper;
-import com.joaozao.phonedto.model.Phone;
 import com.joaozao.phonedto.service.PhoneService;
-import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
-/**
- * Controlador REST responsável por gerenciar as operações relacionadas a telefones
- * Expõe endpoints para CRUD de telefones
- */
 @RestController
-@RequestMapping("/phones")
+@RequestMapping("/phone")
 public class PhoneController {
-
-    // Injeção de dependência do serviço de telefones
     private final PhoneService phoneService;
 
-    @Autowired
     public PhoneController(PhoneService phoneService) {
         this.phoneService = phoneService;
     }
 
-
-    @GetMapping
-    public List<PhoneResponseDTO> getAllPhones() {
-        return phoneService.findAll().stream()
-                .map(PhoneMapper::toDTO)
-                .collect(Collectors.toList());
+    @PostMapping("/user/{userId}")
+    public ResponseEntity<PhoneResponseDTO> createPhone(@PathVariable Long userId, @RequestBody PhoneRequestDTO phoneRequestDTO) {
+        PhoneResponseDTO createdPhone = phoneService.createPhone(userId, phoneRequestDTO);
+        return ResponseEntity.ok(createdPhone);
     }
 
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<List<PhoneResponseDTO>> getAllPhonesByUserId(@PathVariable Long userId) {
+        List<PhoneResponseDTO> phones = phoneService.getAllPhonesByUserId(userId);
+        return ResponseEntity.ok(phones);
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<PhoneResponseDTO> getPhoneById(@PathVariable Long id) {
-        return phoneService.findById(id)
-                .map(PhoneMapper::toDTO)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        PhoneResponseDTO phone = phoneService.getPhoneById(id);
+        return ResponseEntity.ok(phone);
     }
-
-
-    @PostMapping("/user/{userId}")
-    public ResponseEntity<PhoneResponseDTO> createPhone(
-            @PathVariable Long userId,
-            @Valid @RequestBody PhoneRequestDTO phoneDTO) {
-        try {
-            Phone phone = phoneService.createPhone(userId, phoneDTO.getNumber());
-            return ResponseEntity.ok(PhoneMapper.toDTO(phone));
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.badRequest().build();
-        }
-    }
-
 
     @PutMapping("/{id}")
-    public ResponseEntity<PhoneResponseDTO> updatePhone(
-            @PathVariable Long id,
-            @Valid @RequestBody PhoneRequestDTO phoneDTO) {
-        try {
-            Phone phone = phoneService.updatePhone(id, phoneDTO.getNumber());
-            return ResponseEntity.ok(PhoneMapper.toDTO(phone));
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.notFound().build();
-        }
+    public ResponseEntity<PhoneResponseDTO> updatePhone(@PathVariable Long id, @RequestBody PhoneRequestDTO phoneRequestDTO) {
+        PhoneResponseDTO updatedPhone = phoneService.updatePhone(id, phoneRequestDTO);
+        return ResponseEntity.ok(updatedPhone);
     }
-
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletePhone(@PathVariable Long id) {
-        try {
-            phoneService.deletePhone(id);
-            return ResponseEntity.noContent().build();
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.notFound().build();
-        }
+        phoneService.deletePhone(id);
+        return ResponseEntity.noContent().build();
     }
 } 

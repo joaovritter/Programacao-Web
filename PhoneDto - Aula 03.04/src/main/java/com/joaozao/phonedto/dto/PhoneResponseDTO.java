@@ -1,30 +1,9 @@
 package com.joaozao.phonedto.dto;
 
+import lombok.Data;
+
+@Data
 public class PhoneResponseDTO {
     private Long id;
-    private String number;
-
-    public PhoneResponseDTO() {
-    }
-
-    public PhoneResponseDTO(Long id, String number) {
-        this.id = id;
-        this.number = number;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
+    private String numero;
 } 

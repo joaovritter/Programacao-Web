@@ -1,5 +1,7 @@
 package com.joaozao.phonedto.service;
 
+import com.joaozao.phonedto.dto.PhoneRequestDTO;
+import com.joaozao.phonedto.dto.PhoneResponseDTO;
 import com.joaozao.phonedto.model.Phone;
 import com.joaozao.phonedto.model.User;
 import com.joaozao.phonedto.repository.PhoneRepository;
@@ -8,50 +10,55 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class PhoneService {
 
     @Autowired
     private PhoneRepository phoneRepository;
+
     @Autowired
     private UserRepository userRepository;
 
-    public List<Phone> findAll() {
-        return phoneRepository.findAll();
-    }
-
-    public Optional<Phone> findById(Long id) {
-        return phoneRepository.findById(id);
-    }
-
-    public Phone createPhone(Long userId, String number) {
+    public PhoneResponseDTO createPhone(Long userId, PhoneRequestDTO phoneRequestDTO) {
         User user = userRepository.findById(userId)
-                .orElseThrow(() -> new IllegalArgumentException("Usuário não encontrado"));
+                .orElseThrow(() -> new RuntimeException("User not found"));
 
-        if (user.getPhones().size() >= 3) {
-            throw new IllegalArgumentException("Usuário já possui o número máximo de telefones.");
-        }
-
-        Phone phone = new Phone();
-        phone.setNumber(number);
-        phone.setUser(user);
-        return phoneRepository.save(phone);
+        Phone phone = new Phone(user, phoneRequestDTO.getNumero());
+        Phone savedPhone = phoneRepository.save(phone);
+        return convertToResponseDTO(savedPhone);
     }
 
-    public Phone updatePhone(Long id, String number) {
-        Phone existingPhone = phoneRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("Telefone não encontrado"));
+    public List<PhoneResponseDTO> getAllPhonesByUserId(Long userId) {
+        return phoneRepository.findByUserId(userId).stream()
+                .map(this::convertToResponseDTO)
+                .collect(Collectors.toList());
+    }
 
-        existingPhone.setNumber(number);
-        return phoneRepository.save(existingPhone);
+    public PhoneResponseDTO getPhoneById(Long id) {
+        Phone phone = phoneRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Phone not found"));
+        return convertToResponseDTO(phone);
+    }
+
+    public PhoneResponseDTO updatePhone(Long id, PhoneRequestDTO phoneRequestDTO) {
+        Phone phone = phoneRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Phone not found"));
+
+        phone.setNumero(phoneRequestDTO.getNumero());
+        Phone updatedPhone = phoneRepository.save(phone);
+        return convertToResponseDTO(updatedPhone);
     }
 
     public void deletePhone(Long id) {
-        if (!phoneRepository.existsById(id)) {
-            throw new IllegalArgumentException("Telefone não encontrado");
-        }
         phoneRepository.deleteById(id);
     }
-}
+
+    private PhoneResponseDTO convertToResponseDTO(Phone phone) {
+        PhoneResponseDTO responseDTO = new PhoneResponseDTO();
+        responseDTO.setId(phone.getId());
+        responseDTO.setNumero(phone.getNumero());
+        return responseDTO;
+    }
+} 
