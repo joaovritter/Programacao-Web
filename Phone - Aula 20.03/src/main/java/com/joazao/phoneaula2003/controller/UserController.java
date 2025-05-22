@@ -23,6 +23,13 @@ public class UserController {
         this.userService = userService;
     }
 
+    @PostMapping("/createUsers")
+    public List<User> createUsers(@RequestBody List<User> users) {
+        users.forEach(user ->{
+            user.getPhones().forEach(phone -> phone.setUser(user));
+        });
+        return userRepository.saveAll(users);
+    }
 
     //Métodos Post
     @PostMapping ("/create")

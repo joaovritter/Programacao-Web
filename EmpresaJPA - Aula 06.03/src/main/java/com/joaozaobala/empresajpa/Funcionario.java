@@ -23,6 +23,7 @@ public class Funcionario {
     @OneToMany (mappedBy = "supervisor")
     private List<Funcionario> supervisionados;
 
+
     //Um funcionario tem varios dependentes
     @OneToMany (mappedBy = "parentesco")
     private List<Dependente> dependentes;

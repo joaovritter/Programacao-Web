@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    animation: mudarCores 10s infinite alternate;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -750px 0px;
+}
+
+/* ANIMAÇÃO DE COR */
+@keyframes mudarCores {
+    0% {
+        background-color: #0f0f0f;
+        color: #ffffff;
+    }
+    25% {
+        background-color: #0d1b2a;
+        color: #f4f4f4;
+    }
+    50% {
+        background-color: #1a535c;
+        color: #ffe66d;
+    }
+    75% {
+        background-color: #ff6b6b;
+        color: #222;
+    }
+    100% {
+        background-color: #4ecdc4;
+        color: #000000;
+    }
+}
+
+.a, p, h1, h2, h3, h4, h5, h6, br, li, ul, ol, span {
+    font-family: "Microsoft PhagsPa";
+}
+
+/* Mantendo estrutura personalizada */
+#topo {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.informacoes {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.imagemPerfil img {
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.3s;
+}
+.imagemPerfil img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.habilidades table {
+    font-family: "Microsoft PhagsPa";
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: inherit;
+}
+.habilidades table tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.habilidades th, .habilidades td {
+    border: 1px solid #dfdfdf;
+    padding: 8px;
+    text-align: center;
+}
+.habilidades ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    gap: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 1px solid #dfdfdf;
+    color: inherit;
+}
+
+.links a,
+.twitch,
+.github,
+.instagram,
+.email,
+.strava {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.twitch:hover,
+.github:hover,
+.instagram:hover,
+.email:hover,
+.strava:hover {
+    font-size: 110%;
+}
+
+.buttonTema {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: inherit;
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px;
+}
+.buttonTema:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+.contato {
+    font-family: "Microsoft PhagsPa";
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 200px;
+}
+
+.contato textarea,
+.contato input {
+    height: 25px;
+    width: 15%;
+}
+
+#botao {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: inherit;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+#botao:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+}
+
+.setaTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    transition: 0.3s;
+}
+.setaTopo:hover {
+    transform: scale(1.2);
+}

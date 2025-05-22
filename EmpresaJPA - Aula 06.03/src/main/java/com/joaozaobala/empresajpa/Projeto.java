@@ -12,6 +12,8 @@ public class Projeto {
     private int projNumero;
     private String projNome;
     private String projLocal;
+
+    
     //Relacao TRABALHA_EM
     @OneToMany(mappedBy = "numeroProjeto") //mapeia da clasee FuncionarioProjeto
     private List<TrabalhaEm> listaFuncionariosP;

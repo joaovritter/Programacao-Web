@@ -5,16 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8528ec1b-b11b-4d05-b15c-e8afff9d8aff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Avaliacao 1 Registro de Vendas - Aula 24.04/src/main/java/com/joaozao/avaliacao1registrodevendas/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Avaliacao 1 Registro de Vendas - Aula 24.04/src/main/java/com/joaozao/avaliacao1registrodevendas/dto/CreateClienteDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Avaliacao 1 Registro de Vendas - Aula 24.04/src/main/java/com/joaozao/avaliacao1registrodevendas/model/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Avaliacao 1 Registro de Vendas - Aula 24.04/src/main/java/com/joaozao/avaliacao1registrodevendas/model/ItemVenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Avaliacao 1 Registro de Vendas - Aula 24.04/src/main/java/com/joaozao/avaliacao1registrodevendas/model/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Avaliacao 1 Registro de Vendas - Aula 24.04/src/main/java/com/joaozao/avaliacao1registrodevendas/model/Venda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Avaliacao 1 Registro de Vendas - Aula 24.04/src/main/java/com/joaozao/avaliacao1registrodevendas/service/ClienteService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/src/main/java/com/joaozaobala/empresajpa/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/src/main/java/com/joaozaobala/empresajpa/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/src/main/java/com/joaozaobala/empresajpa/Projeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/src/main/java/com/joaozaobala/empresajpa/Projeto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Departamento.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Departamento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Dependente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Dependente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/DependenteId.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/DependenteId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/EmpresaJpaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/EmpresaJpaApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Funcionario.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Funcionario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/LocalizacaoId.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/LocalizacaoId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Localizacoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Localizacoes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Nome.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Nome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Projeto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/Projeto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/TrabalhaEm.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/TrabalhaEm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/TrabalhaEmId.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/classes/com/joaozaobala/empresajpa/TrabalhaEmId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/test-classes/com/joaozaobala/empresajpa/EmpresaJpaApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../EmpresaJPA - Aula 06.03/target/test-classes/com/joaozaobala/empresajpa/EmpresaJpaApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/CrudApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/CrudApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/PessoaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/PessoaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/PessoaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/PessoaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/homeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/classes/com/example/crud/homeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/test-classes/com/example/crud/CrudApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Iniciando Spring - 20.02/target/test-classes/com/example/crud/CrudApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Phone - Aula 20.03/src/main/java/com/joazao/phoneaula2003/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Phone - Aula 20.03/src/main/java/com/joazao/phoneaula2003/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Phone - Aula 20.03/src/main/java/com/joazao/phoneaula2003/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Phone - Aula 20.03/src/main/java/com/joazao/phoneaula2003/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/PhoneResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/PhoneResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/UserResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/dto/UserResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/mapper/PhoneMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/mapper/PhoneMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/service/PhoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/service/PhoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/joaozao/phonedto/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/Dto/CreateUserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/Dto/ResponseUserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/Phone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/Projeto2003Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/repository/PhoneRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/repository/RepositoryUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projeto2003/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/projeto2003/Projeto2003ApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/projeto2003/Projeto2003ApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Event.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Phone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/classes/com/joaozaobala/springjpa0603/UserProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/test-classes/com/joaozaobala/springjpa0603/ApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring-JPA-Annotation Aula - 06.03/target/test-classes/com/joaozaobala/springjpa0603/ApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/classes/com/joaozaobala/springcrud2702/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/classes/com/joaozaobala/springcrud2702/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/classes/com/joaozaobala/springcrud2702/controller/PessoaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/classes/com/joaozaobala/springcrud2702/controller/PessoaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/classes/com/joaozaobala/springcrud2702/model/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/classes/com/joaozaobala/springcrud2702/model/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/classes/com/joaozaobala/springcrud2702/repository/PessoaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/classes/com/joaozaobala/springcrud2702/repository/PessoaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/test-classes/com/joaozaobala/springcrud2702/ApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringCrud- Aula 27.02/target/test-classes/com/joaozaobala/springcrud2702/ApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +107,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.PhoneDtoApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/jvgam/OneDrive/Área de Trabalho/JV/ATIVIDADES FACUL/5º SEMESTRE/Contabilidade Aplicada a Infomática&quot;,
@@ -97,11 +156,27 @@
       <updated>1745512257236</updated>
       <workItem from="1745512258374" duration="2037000" />
       <workItem from="1745514308823" duration="1414000" />
-      <workItem from="1745516647734" duration="3566000" />
+      <workItem from="1745516647734" duration="4164000" />
+      <workItem from="1745526633840" duration="5000" />
+      <workItem from="1745526670274" duration="30000" />
+      <workItem from="1745526732845" duration="618000" />
+      <workItem from="1745533161628" duration="48000" />
+      <workItem from="1745533225542" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,0 +1,273 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-image: url('images/backgroundBody.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -750px 0px;
+}
+.a, p, h1, h2, h3, h4, h5, h6, br, li, ul, ol, span{
+    font-family: "Microsoft PhagsPa";
+}
+
+#topo{
+    color: #000000;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.informacoes{
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+}
+.imagemPerfil img{
+
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.3s;
+
+}
+.imagemPerfil img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.habilidades{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.habilidades table{
+    font-family: "Microsoft PhagsPa";
+    background-color: #f8f8f8;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+
+}
+.habilidades table tr{
+    transition: 0.3s;
+}
+.habilidades table tr:hover{
+    background-color: #e6e6e6;
+    transition: 0.3s;
+}
+.habilidades th, .habilidades td{
+    border: 1px solid #dfdfdf;
+    padding: 8px;
+    text-align: center;
+}
+.habilidades ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.tabelaHabilidades{
+    border:2px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: "Microsoft PhagsPa";
+
+}
+
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    gap: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 1px solid #dfdfdf;
+
+
+
+}
+.links:hover{
+    transition: 0.1s;
+}
+
+.twitch{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-weight: bold;
+}
+.twitch p {
+    transition: 0.3s ;
+    margin-bottom: 15px;
+    margin-left: 3px;
+}
+.twitch:hover{
+    font-size: 110%;
+    transition: 0.1s ;
+}
+.githubLogo{
+    padding-right: 7px;
+    padding-left: 4px ;
+}
+.github{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+.github p{
+    transition: 0.1s ;
+    margin-left: 3px ;
+}
+.github:hover{
+    font-size: 110%;
+    transition: 0.3s ;
+}
+.instagram{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+.instagram p {
+    transition: 0.1s ;
+    margin-left: 3px ;
+}
+.instagram:hover{
+    font-size: 110%;
+    transition: 0.3s ;
+}
+.emailLogo{
+    padding-right: 7px;
+    padding-left: 4px ;
+}
+.email{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+.email a{
+    padding-left: 0;
+}
+.email p {
+    transition: 0.1s ;
+
+}
+.email:hover{
+    font-size: 110%;
+    transition: 0.3s ;
+}
+
+.strava{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+.stravaLogo{
+    padding-right: 7px;
+    padding-left: 4px ;
+}
+
+.strava p   {
+    transition: 0.1s ;
+
+}
+.strava:hover{
+    font-size: 110%;
+    transition: 0.3s ;
+}
+
+.buttonTema {
+    background-color: #4285F4;
+    color: white;
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px;
+}
+.buttonTema:hover {
+    background-color: #e6e6e6;
+    color: #4285F4;
+}
+
+
+.contato{
+    font-family: "Microsoft PhagsPa";
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 200px;
+}
+.contato textarea{
+    height: 70px;
+    width: 15%;
+}
+.contato input {
+    height: 25px;
+    width: 15%;
+}
+.contato input#email {
+    margin-left: 10px;
+}
+.contato input#nome {
+    margin-left: 5px;
+}
+#botao{
+    background-color: #4285F4;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+#botao:hover {
+    background-color: #e6e6e6;
+    color: #4285F4;
+}
+
+.setaTopo{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    transition: 0.3s;
+
+}
+.setaTopo:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+
+
