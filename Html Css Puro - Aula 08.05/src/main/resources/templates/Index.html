@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link id="theme" rel="stylesheet" href="claro.css">
+
+</head>
+<header>
+    <h1 id="topo">Curriculo Do Joãozão </h1>
+</header>
+<body>
+<div class="informacoes">
+<div class="imagemPerfil">
+<img src="images/joao.jpeg" alt="joao" height="200">
+</div>
+<div class="descricao">
+<h3>Futuro Desenvolvedor</h3>
+<p>
+    Meu nome é João Vitor dos Santos Ritter. <br>
+    Sou estudante de Sistemas de Informção na Universidade Franciscana
+    atualmente estou no 5º semestre
+    e estou aprendendo a programar em Java, Spring e Thymeleaf, banco de dados.
+</p>
+<p>
+    Nasci em Palmitinho RS, no dia 17 de julho de 2004<br>
+    Meu pai se chama Vilmar Camilo Ritter e minha mãe se chama Alzira dos Santos
+</p>
+</div>
+</div>
+
+<div class="habilidades">
+<h2>Habilidades</h2>
+<ul>
+    <li>Comunicação avançada nos dias de hoje</li>
+    <li>Faço alguns programas</li>
+    <li>Cozinho Bem</li>
+    <li>Treino Pesado</li>
+    <li>Tento correr bastante</li>
+    <li>Gosto de tecnologia</li>
+</ul>
+<table style="width:100%; border-collapse: collapse;" border="1">
+    <tr>
+        <th>Habilidade</th>
+        <th>Nivel</th>
+        <th>Tempo</th>
+    </tr>
+    <tr>
+        <td>Cozinhar</td>
+        <td>Extremely Professional</td>
+        <td>10 anos</td>
+    </tr>
+    <tr>
+        <td>Comunicacao</td>
+        <td>Extreme Advanced</td>
+        <td>20 anos</td>
+    </tr>
+    <tr>
+        <td>Correr</td>
+        <td>So so</td>
+        <td>1 ano</td>
+    </tr>
+    <tr>
+        <td>Treinar</td>
+        <td>Like a boss</td>
+        <td>3 anos</td>
+    </tr>
+    <tr>
+        <td colspan="2">Tempo Total</td>
+        <td>100 anos</td>
+    </tr>
+</table>
+</div>
+<div class="links">
+<div>
+<a class="link twitch" href="https://www.twitch.tv/joaoza0" target="_blank">
+    <p>Não clique no link</p>
+</a>
+</div>
+
+
+<div>
+<a class="link github" href="https://www.github.com/joaovritter" target="_blank">
+    <img class="githubLogo" src="images/github.png" alt="github" height="23">
+    <p><strong>GitHub</strong></p>
+</a>
+</div>
+
+<div>
+<a  class="link instagram" href="https://www.instagram.com/joao_vritter">
+    <img class="instagramLogo" src="images/instapreto.png" alt="instagram" height="24">
+    <p><strong>Instagram</strong></p>
+</a>
+</div>
+
+<div>
+<a class="link strava" href="https://www.strava.com/athletes/130561133" target="_blank">
+    <img class="stravaLogo" src="images/strava.png" alt="Strava" />
+    <p>Strava</p>
+</a>
+</div>
+
+<div>
+<a class="link email" href="mailto:joaovritter2004@gmail.com">
+    <img class="emailLogo" src="images/email.png" alt="email" height="24" >
+    <p >Enviar Email</p>
+</a>
+</div>
+</div>
+
+<div class="rodape">
+<form class="contato">
+    <h2>Entre em Contato</h2>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem"></textarea><br><br>
+
+    <input id="botao" type="submit" value="Enviar">
+</form>
+
+<a href="#topo" alt="setaTopo" title="Go to top">
+    <img class="setaTopo" src="images/setaTopo.png" alt="setaTopo">
+</a>
+</div>
+
+<button class="buttonTema" onclick="changeStyle('claro.css')">🌞 Modo Claro</button>
+<button class="buttonTema" onclick="changeStyle('escuro.css')">🌙 Modo Escuro</button>
+<button class="buttonTema" onclick="changeStyle('animado.css')">🌈 Tema Animado</button>
+
+<script>
+    function changeStyle(sheet) {
+        document.getElementById('theme').href = sheet;
+    }
+</script>
+</body>
+</html>
